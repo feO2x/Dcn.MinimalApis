@@ -13,9 +13,9 @@ public static class Swagger
                  {
                      options.SwaggerDoc("v1", new OpenApiInfo
                      {
-                         Title = "ADC 2022 Minimal API service",
+                         Title = "DCC 2022 Minimal API service",
                          Version = "v1",
-                         Description = "An example Minimal API web app for my corresponding talk at the Advanced Developers Conference 2022 in Regensburg, Germany.",
+                         Description = "An example Minimal API web app for my corresponding talk at the Digital Craftsmanship Nordoberpfalz in December 2022.",
                          Contact = new OpenApiContact
                          {
                              Name = "Kenny Pflug",
@@ -31,7 +31,7 @@ public static class Swagger
     public static WebApplication UseSwaggerAndSwaggerUi(this WebApplication app)
     {
         app.UseSwagger()
-           .UseSwaggerUI(options => options.SwaggerEndpoint("/swagger/v1/swagger.json", "ADC 2022 Minimal API Example"));
+           .UseSwaggerUI(options => options.SwaggerEndpoint("/swagger/v1/swagger.json", "DCN 2022 Minimal API Example"));
         return app;
     }
 }
