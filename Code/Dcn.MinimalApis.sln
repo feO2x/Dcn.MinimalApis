@@ -12,6 +12,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dcn.MinimalApis.Tests", "Dcn.MinimalApis.Tests\Dcn.MinimalApis.Tests.csproj", "{4EF443D8-1D20-4D76-8EBD-0AC470F1CC68}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 Real-World Example", "2 Real-World Example", "{A5115D63-8FC5-4116-81F9-6F83CAED597D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 Playground", "1 Playground", "{B0E17913-AF4D-420B-875D-072B930ED764}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playground", "Playground\Playground.csproj", "{1C018E5C-8CAE-41C0-AE60-CFC6B359E528}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,5 +35,14 @@ Global
 		{4EF443D8-1D20-4D76-8EBD-0AC470F1CC68}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4EF443D8-1D20-4D76-8EBD-0AC470F1CC68}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4EF443D8-1D20-4D76-8EBD-0AC470F1CC68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C018E5C-8CAE-41C0-AE60-CFC6B359E528}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C018E5C-8CAE-41C0-AE60-CFC6B359E528}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C018E5C-8CAE-41C0-AE60-CFC6B359E528}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C018E5C-8CAE-41C0-AE60-CFC6B359E528}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8E14CB49-0360-498E-90E9-2B0A5F51A130} = {A5115D63-8FC5-4116-81F9-6F83CAED597D}
+		{4EF443D8-1D20-4D76-8EBD-0AC470F1CC68} = {A5115D63-8FC5-4116-81F9-6F83CAED597D}
+		{1C018E5C-8CAE-41C0-AE60-CFC6B359E528} = {B0E17913-AF4D-420B-875D-072B930ED764}
 	EndGlobalSection
 EndGlobal
