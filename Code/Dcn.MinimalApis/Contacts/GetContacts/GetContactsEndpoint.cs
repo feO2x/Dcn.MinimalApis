@@ -22,7 +22,7 @@ public static class GetContactsEndpoint
     /// <summary>
     /// Gets a list of contacts (paged).
     /// </summary>
-    /// <param name="validationContextFactory">The factory that creates the validation context.</param>
+    /// <param name="validationContext">The validation context that is used to track errors.</param>
     /// <param name="sessionFactory">The factory that creates the session to the database.</param>
     /// <param name="skip">
     /// The number of contacts that will be skipped for paging (optional). The default value is 0.
@@ -33,13 +33,12 @@ public static class GetContactsEndpoint
     /// </param>
     /// <param name="searchTerm">The search term that is used to filter the contacts (optional). The default value is null.</param>
     /// <response code="400">Occurs when skip is less than 0, or when take is not between 1 and 100.</response>
-    public static async Task<IResult> GetContacts(IValidationContextFactory validationContextFactory,
+    public static async Task<IResult> GetContacts(ValidationContext validationContext,
                                                   ISessionFactory<IGetContactsSession> sessionFactory,
                                                   int skip = 0,
                                                   int take = 30,
                                                   string? searchTerm = null)
     {
-        var validationContext = validationContextFactory.CreateValidationContext();
         if (validationContext.CheckForPagingErrors(skip, take, out var errors))
             return Results.BadRequest(errors);
 
